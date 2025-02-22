@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Application</title>
+  <link rel="stylesheet" href="./styling/general_style.css">
+
+  <script src="./actions/actions_y.js"></script>
+</head>
+<body onload="greet()">
+  <button onclick="alert('Hello world')">Click me</button>
+  <p id="text">This is the first HTML, CSS and Javascript</p>
+  <button onclick="changeText()">Change text</button>
+  <button id="click">Internal Javascript Click</button>
+  
+  <div>
+    Change Background Color
+    <input type="color" id="colorPicker" />
+  </div>
+<script>
+
+  const buttonId = document.getElementById('click')
+
+  buttonId.onclick = function(){
+    alert("Button was clicked")
+  }
+
+  click.onmouseover = function(){
+    buttonId.style.color = "red";
+  }
+
+  buttonId.onmouseout = function(){
+    buttonId.style.color = "black";
+  }
+
+  const colorPicker = document.getElementById('colorPicker');
+
+
+  colorPicker.addEventListener('input', function() {
+      document.body.style.backgroundColor = colorPicker.value;
+  });
+
+
+</script>
+</body>
+</html>
