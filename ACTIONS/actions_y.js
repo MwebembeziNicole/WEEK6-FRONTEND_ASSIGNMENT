@@ -1,3 +1,4 @@
+
 function greet(){
     alert('Welcome to my dynamic application')
     document.getElementById('click').onclick = function(){
